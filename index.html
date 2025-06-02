@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>StasLive — Неоновый стиль</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: #0d0d0d;
+      color: #fff;
+      overflow-x: hidden;
+      position: relative;
+      text-shadow: 0 0 2px black, 0 0 5px black;
+    }
+
+    .neon-bg {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      overflow: hidden;
+      z-index: -1;
+    }
+
+    .shape {
+      position: absolute;
+      filter: blur(20px);
+      opacity: 0.7;
+      animation: move 30s infinite alternate ease-in-out;
+    }
+
+    .circle {
+      border-radius: 50%;
+    }
+
+    .square {
+      border-radius: 15px;
+    }
+
+    .shape1 {
+      width: 200px;
+      height: 200px;
+      background: #00e6e6;
+      top: 10%;
+      left: 5%;
+    }
+
+    .shape2 {
+      width: 150px;
+      height: 150px;
+      background: #ff00cc;
+      top: 20%;
+      left: 70%;
+    }
+
+    .shape3 {
+      width: 300px;
+      height: 10px;
+      background: #00ff99;
+      top: 70%;
+      left: 50%;
+      border-radius: 5px;
+    }
+
+    .shape4 {
+      width: 250px;
+      height: 250px;
+      background: #ff6600;
+      top: 50%;
+      left: 20%;
+    }
+
+    .shape5 {
+      width: 400px;
+      height: 15px;
+      background: #6666ff;
+      top: 80%;
+      left: 10%;
+      border-radius: 10px;
+    }
+
+    @keyframes move {
+      0% { transform: translate(0, 0) rotate(0deg); }
+      100% { transform: translate(-80px, 100px) rotate(360deg); }
+    }
+
+    header {
+      text-align: center;
+      padding: 100px 20px 40px;
+    }
+
+    h1 {
+      font-size: 3.5em;
+      color: white;
+      text-shadow: 2px 2px 0 black, 0 0 15px #00e6e6;
+    }
+
+    p {
+      font-size: 1.2em;
+      color: white;
+      max-width: 900px;
+      margin: 20px auto;
+      line-height: 1.6em;
+      text-shadow: 1px 1px 0 black;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 15px 35px;
+      background: #00ffcc;
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1em;
+      border-radius: 30px;
+      transition: 0.3s ease;
+      box-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc;
+    }
+
+    .btn:hover {
+      background: #00bfa6;
+      color: #fff;
+    }
+
+    footer {
+      margin-top: 100px;
+      text-align: center;
+      color: #aaa;
+      font-size: 0.9em;
+      text-shadow: 1px 1px 0 black;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="neon-bg">
+    <div class="shape circle shape1"></div>
+    <div class="shape circle shape2"></div>
+    <div class="shape square shape3"></div>
+    <div class="shape circle shape4"></div>
+    <div class="shape square shape5"></div>
+  </div>
+
+  <header>
+    <h1>StasLive</h1>
+    <p>Представляем вам инновационную игру Stas Live. В игре представлен невероятно уебанский геймплей и кривейшие спрайты игроков.</p>
+    <p>Вы встретите множество отсылок и пасхалок. Прежде чем скачать игру, поймите: после установки ваша жизнь уже не будет прежней.</p>
+    <p>StasLive — это путь в безумие, от которого нет возврата.</p>
+    <h1>StasLive — пиздуй в тургай</h1>
+
+    <a href="https://drive.google.com/file/d/1DI9B24U2W0aGprH01_uLGWj1g0IDNN7z/view?usp=drive_link" class="btn" download>⬇ Скачать APK</a>
+  </header>
+
+  <footer>
+    © 2025 StasLive by Максим. Neon is forever.
+  </footer>
+
+</body>
+</html>
